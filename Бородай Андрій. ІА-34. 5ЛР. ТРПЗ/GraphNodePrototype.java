@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
 
-// 1. Інтерфейс Prototype (ЄДИНИЙ базовий тип)
 interface GraphNodePrototype extends Cloneable {
     GraphNodePrototype clone();
     String getId();
@@ -9,4 +8,5 @@ interface GraphNodePrototype extends Cloneable {
     void process();
     void addNeighbor(GraphNodePrototype neighbor);
     List<GraphNodePrototype> getNeighbors();
+
 }
